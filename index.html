@@ -10,14 +10,31 @@
 </head>
 
 <body>
-    <video id="bgVideo" loop autoplay height="500px" muted="false" src="/video/Charcoal1.m4v" class="c-video" />
+    <header>
+        <div class="c-banner">
 
-    <audio autoplay>
-        <source src="/audio/enter-blacksmith-sfx.mp3" type="audio/mpeg">
+            <div class="c-video">
+                <video id="bgVideo" loop autoplay height="150px" muted="false" src="/video/fire-sfx.m4v">    
+                </video>
+            </div>
+            <!-- <img src="/images/sparks-1.gif"> -->
+
+            <div class="c-banner_image">
+                <img src="/images/blacksmith-workshop.jpg" alt="">
+            </div>
+            <!-- <div class="c-banner_image">
+
+            </div> -->
+        </div>
+    </header>
+
+    <audio autoplay preload="auto">
+        <source src="/audio/enter-blacksmith-sfx.mp3" type="audio/mpeg"/>
     </audio>
-    <audio autoplay loop>
-        <source src="/audio/blacksmith-ambient.mp3" type="audio/mpeg">
+    <audio autoplay loop="true" preload="auto">
+        <source src="/audio/blacksmith-ambient.mp3" type="audio/mpeg"/>
     </audio>
+
 </body>
 
 </html>
