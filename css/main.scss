@@ -85,6 +85,10 @@
 
 
 
+ @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;700&display=swap');
+
+
+
 
 //@import "settings/settings.custom";
 @import "settings/all";
@@ -121,6 +125,7 @@
 @import "objects/objects.list-bare";
 @import "objects/objects.list-inline";
 
+@import "components/components.obsidian";
 @import "components/components.flip-card";
 @import "components/components.about";
 @import "components/components.lang-selector";

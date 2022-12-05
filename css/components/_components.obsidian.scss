@@ -1,0 +1,14 @@
+.c-obsidian{
+
+}
+
+.c-obsidian__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    & > *{
+        flex-basis: 50vw;
+    }
+    
+}
