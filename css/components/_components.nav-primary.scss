@@ -3,20 +3,45 @@
 \*------------------------------------*/
 
 .c-nav-primary {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  background-image: url('/images/blacksmith-wood-bg.png');
+  filter: sepia(50%);
+  // &::before{
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: #5558;
+  //   z-index: 3;
+  // }
 }
 
-  .c-nav-primary__item {
+.c-nav-primary__item {
+  color: white;
+  @include font-size(16px);
+  @include font-family(serif);
+}
+
+.c-nav-primary__link {
+  display: inline-block;
+  padding-right: $global-spacing-unit;
+  padding-left: $global-spacing-unit;
+  @include font-weight(normal);
+
+  &.is-active {
+    text-decoration: underline;
+    cursor: default;
   }
 
-    .c-nav-primary__link {
-      display: inline-block;
-      padding-right: $global-spacing-unit;
-      padding-left:  $global-spacing-unit;
-      @include font-weight(normal);
-
-      &.is-active {
-        text-decoration: underline;
-        cursor: default;
-      }
-
-    }
+}

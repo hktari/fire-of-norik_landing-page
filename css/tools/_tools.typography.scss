@@ -6,6 +6,9 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;700&display=swap');
+
+
 
 
 // Shorthand onto specific font-stacks.
@@ -16,7 +19,7 @@
   }
 
   @elseif ($family == "serif") {
-    font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+    font-family: "Merienda", "Times New Roman", serif;
   }
 
   @else {
