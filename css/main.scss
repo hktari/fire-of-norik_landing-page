@@ -119,18 +119,6 @@
 
 
 
-@import "objects/objects.wrappers";
-@import "objects/objects.layout";
-@import "objects/objects.headline";
-@import "objects/objects.media";
-@import "objects/objects.list-bare";
-@import "objects/objects.list-inline";
-@import "objects/objects.crop";
-
-
-
-
-
 @import "components/components.logo";
 @import "components/components.page";
 @import "components/components.page-head";
@@ -152,21 +140,7 @@
 @import "components/components.promo";
 @import "components/components.pagination";
 
-
-
-
-
-@import "scopes/scopes.prose";
-
-
-
-
-
-@import "themes/themes.red";
-//@import "themes/themes.custom";
-
-
-
+@import "components/components.store-sign";
 
 
 @import "utilities/utilities.headings";
