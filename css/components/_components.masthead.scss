@@ -31,4 +31,12 @@
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+
+  mask: url('/images/blacksmith-workshop-mask.png');
+  mask-repeat: no-repeat;
+  mask-mode: alpha;
+  mask-size: cover;
+  mask-type: alpha;
+  mask-position: 50% 50%;
 }
