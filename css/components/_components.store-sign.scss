@@ -1,8 +1,10 @@
+$sign-width: 625px;
+
 .c-store-sign__sign {
     position: absolute;
     top: -500px;
     left: 10%;
-    width: 525px;
+    width: $sign-width;
     height: auto;
     animation: banner-title-slidein 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
     animation-fill-mode: forwards;
@@ -39,7 +41,7 @@
 }
 
 .c-store-sign__chain--right {
-    left: calc(10% + 525px - 45px - 30px);
+    left: calc(10% + $sign-width - 45px - 30px);
 }
 
 .c-banner-chain img {

@@ -2,6 +2,9 @@
 $primary: #900;
 $enable-shadows: true;
 $prefix: "mo-";
+$font-family-base: 'Cinzel';
+$font-size-base: 1rem;
+$link-color: white;
 
 // Then import Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
