@@ -31,6 +31,11 @@
     left: calc(10% + 45px);
     animation: banner-title-chain-slidein 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
     animation-fill-mode: forwards;
+
+    & > img{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .c-store-sign__chain--right {
