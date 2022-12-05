@@ -84,41 +84,8 @@
 
 
 
-
- @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;700&display=swap');
-
-
-
-
 //@import "settings/settings.custom";
 @import "settings/all";
-
-
-
-
-
-@import "tools/all";
-
-
-
-
-
-@import "generic/generic.box-sizing";
-@import "generic/generic.normalize";
-@import "generic/generic.reset";
-@import "generic/generic.shared";
-
-
-
-
-
-@import "elements/elements.page";
-@import "elements/elements.headings";
-@import "elements/elements.links";
-@import "elements/elements.lists";
-@import "elements/elements.images";
-@import "elements/elements.quotes";
-
 
 
 
@@ -130,31 +97,10 @@
 @import "components/components.about";
 @import "components/components.lang-selector";
 @import "components/components.logo";
-@import "components/components.page";
-@import "components/components.page-head";
-@import "components/components.page-foot";
 @import "components/components.nav-primary";
-@import "components/components.nav-secondary";
-@import "components/components.nav-tertiary";
 @import "components/components.masthead";
-@import "components/components.sub-content";
-@import "components/components.panel";
-@import "components/components.score";
-@import "components/components.buttons";
-@import "components/components.avatar";
-@import "components/components.testimonials";
-@import "components/components.calendar";
-@import "components/components.headline";
-
-@import "components/config.promo";
-@import "components/components.promo";
-@import "components/components.pagination";
-
 @import "components/components.store-sign";
 
 
-@import "utilities/utilities.headings";
-@import "utilities/utilities.widths";
 @import "utilities/utilities.healthcheck";
 @import "utilities/utilities.debug";
-@import "utilities/utilities.shame";
