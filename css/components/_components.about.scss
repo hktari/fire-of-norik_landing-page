@@ -1,0 +1,21 @@
+.c-about {
+
+    display: flex;
+    justify-content: space-evenly;
+
+    &>* {
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+}
+
+.c-about__text {
+    @include font-family(serif);
+    @include font-size(18px);
+}
+
+.c-about__image{
+    object-fit: contain;
+    max-height: 600px;
+}
