@@ -1,6 +1,9 @@
 $sign-width: 625px;
 
 .c-store-sign__sign {
+    @extend .d-none;
+    @extend .d-lg-block;
+
     position: absolute;
     top: -500px;
     left: 10%;
@@ -26,6 +29,9 @@ $sign-width: 625px;
 }
 
 .c-store-sign__chain {
+    @extend .d-none;
+    @extend .d-lg-block;
+
     position: absolute;
     width: 30px;
     height: auto;

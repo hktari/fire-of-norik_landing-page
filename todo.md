@@ -7,11 +7,12 @@
 - link to store: opaque bg                          OK
 - footer    OK
 - loading indicator OK
-- setup sample domains
-- deploy
-- sign: add sepia effect, make brighter ?
+- setup sample domains OK
+- deploy    OK
 - mobile
 - smaller font sizes
+- smaller images
+- sign: add sepia effect, make brighter ?
 
 # refine
 - meta data

@@ -11,6 +11,8 @@
 }
 
 .c-masthead__video {
+  display: none;
+  
   position: absolute;
   top: 23%;
   left: 70%;
@@ -33,10 +35,25 @@
   height: 100%;
   object-fit: cover;
 
-  mask: url('/images/blacksmith-workshop-mask.png');
-  mask-repeat: no-repeat;
-  mask-mode: alpha;
-  mask-size: cover;
-  mask-type: alpha;
-  mask-position: 50% 50%;
+  object-position: 100% 0%;
+ 
+
+}
+
+@include media-breakpoint-up(lg) {
+
+
+  .c-masthead__video{
+    display: block;
+  }
+
+  .c-masthead__image-bg {
+
+    mask: url('/images/blacksmith-workshop-mask.png');
+    mask-repeat: no-repeat;
+    mask-mode: alpha;
+    mask-size: cover;
+    mask-type: alpha;
+    mask-position: 50% 50%;
+  }
 }
