@@ -3,15 +3,17 @@
 \*------------------------------------*/
 
 .c-nav-primary {
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
+  height: 70px;
   z-index: 2;
-  padding: 12px 16px;
+  padding: 0px 16px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   background-image: url('/images/blacksmith-wood-bg.png');
   filter: sepia(50%);
@@ -29,15 +31,21 @@
   border-bottom: 1px solid $color-white;
 }
 
-.c-nav-primary__title{
+.c-nav-primary__title {
+  display: none;
+
   color: $color-white;
   margin: 0;
   font-size: 2rem;
   margin-left: 12px;
 }
 
-.c-nav-primary__logo{
+.c-nav-primary__logo {
   object-fit: contain;
+}
+
+.c-nav-primary__list {
+  display: none;
 }
 
 .c-nav-primary__item {
@@ -56,5 +64,40 @@
     text-decoration: underline;
     cursor: default;
   }
+}
 
+.c-nav-primary__menu-toggle {
+  @extend .btn;
+
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  // height: 100%;
+  // width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &>i {
+    color: $color-white;
+    font-size: 1.75rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .c-nav-primary {
+    justify-content: space-between;
+  }
+
+  .c-nav-primary__title{
+    display: inline-block;
+  }
+  .c-nav-primary__list {
+    display: flex;
+  }
+
+  .c-nav-primary__menu-toggle{
+    display: none;
+  }
 }
