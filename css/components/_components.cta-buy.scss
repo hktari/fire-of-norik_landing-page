@@ -1,4 +1,4 @@
-.c-cta-buy{
+.c-cta-buy {
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -6,14 +6,21 @@
     align-items: center;
 }
 
-.c-cta-buy__title{
-    background-color: rgba($color: #333, $alpha: 0.74);
-    border-radius: 4px;
-    color: rgb(216, 184, 4);
-    text-shadow: #333 5px;
-    font-size: 64px;
+.c-cta-buy__title {
+    background-color: $color-grey-dark;
+    border-radius: $border-radius;
+    color: $color-brand-primary;
+    text-shadow: $color-grey-dark 5px;
+    font-size: 3rem;
     font-weight: 700;
     padding: 16px;
     margin: 0 auto;
     display: inline-block;
+}
+
+.c-cta-buy__button {
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .py-2, .px-4;
+    font-size: 1.5rem;
 }
