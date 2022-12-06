@@ -20,3 +20,54 @@ window.addEventListener("load", (event) => {
 
     page.classList.remove('c-page--no-scroll');
 });
+
+
+/* ----------------------- toggle logic for flip cards ---------------------- */
+
+const flipCards = document.getElementsByClassName('c-flip-card')
+// Large devices (desktops, 992px and up)
+const desktopShowDetailsBreakpoint = 992;
+
+for (const card of flipCards) {
+    card.addEventListener('click', flipCardClickEventHandler)
+
+    card.addEventListener('mouseenter', () => {
+        toggleFlipCardDetails(card, true)
+
+
+    })
+    card.addEventListener('mouseleave', () => {
+        toggleFlipCardDetails(card, false)
+    })
+}
+
+function flipCardClickEventHandler(ev) {
+    // don't handle click events no desktop
+    if (window.innerWidth < desktopShowDetailsBreakpoint) {
+
+        for (const card of flipCards) {
+            // hide all, show current
+            toggleFlipCardDetails(card, card === ev.target)
+        }
+    }
+}
+
+function toggleFlipCardDetails(flipCard, forceShowDetails = undefined) {
+    flipCard.classList.toggle('c-flip-card--show-details', forceShowDetails)
+}
+
+
+
+
+
+// This will log the width of the viewport
+console.log(window.innerWidth);
+
+// This will log the width of the frame viewport within a frameset
+console.log(self.innerWidth);
+
+// This will log the width of the viewport of the closest frameset
+console.log(parent.innerWidth);
+
+// This will log the width of the viewport of the outermost frameset
+console.log(top.innerWidth);
