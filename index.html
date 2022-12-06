@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
-<body>
+<body id="pageRoot" class="c-page c-page--no-scroll">
     <header>
         <h1 style="display: none;">Fire Of Norik</h1>
         <nav class="c-nav-primary">
@@ -55,7 +55,7 @@
         <div class="c-masthead">
 
             <div class="c-masthead__video">
-                <video id="bgVideo" loop autoplay height="150px" muted="false" src="/video/fire-vfx.m4v">    
+                <video id="bgVideo" preload="auto" loop height="150px" muted="false" src="/video/fire-vfx.m4v">    
                 </video>
             </div>
             <!-- <img src="/images/sparks-1.gif"> -->
@@ -244,7 +244,7 @@
         <a class="c-footer__text">bkamnik 2022</a>
     </footer>
 
-    <div class="c-loading-ind d-flex justify-content-center align-items-center">
+    <div id="loadingIndicator" class="c-loading-ind">
             <div class="c-loading-ind__wrapper">
                 <img src="/images/logo-no-emblem-black.png" class="c-loading-ind__anvil" alt="anvil">
                 <img src="/images/logo-emblem-gold.png" class="c-loading-ind__emblem" alt="emblem">
@@ -252,13 +252,15 @@
         </div>
     </div>
 
-    <audio autoplay preload="auto">
+    <audio preload="auto">
         <source src="/audio/enter-blacksmith-sfx.mp3" type="audio/mpeg"/>
     </audio>
-    <audio autoplay loop="true" preload="auto">
+    <audio loop="true" preload="auto">
         <source src="/audio/blacksmith-ambient.mp3" type="audio/mpeg"/>
     </audio>
-
+<!-- 
+    <script src="simulate-loading.js"></script> -->
+    <script src="script.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
