@@ -1,0 +1,15 @@
+$footer-height: 40px;
+
+.c-footer {
+    height: $footer-height;
+    background-image: url('/images/blacksmith-wood-bg.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-footer__text {
+    font-size: 0.8rem;
+    color: $color-white;
+    opacity: 0.5;
+}

@@ -3,13 +3,13 @@
 - about section OK
 - obisidian section OK
 - contact section   OK
-- menu bar: gold bottom border, lang icons, title
-- link to store: opaque bg
+- menu bar: gold bottom border, lang icons, title   OK
+- link to store: opaque bg                          OK
+- footer
 - setup sample domains
 - loading indicator
 - deploy
 - sign: add sepia effect, make brighter ?
-- footer
 - mobile
 - smaller font sizes
 
