@@ -1,12 +1,19 @@
 // Variable overrides first
-$primary: #900;
+$primary: $color-brand-primary;
+$secondary: $color-brand-secondary;
+$link-color: $color-white;
+
+// $success:       $green;
+$info:          $color-white;
+// $warning:       $yellow;
+// $danger:        $red;
+$light:         $color-white;
+$dark:          $color-grey-dark;
+
 $enable-shadows: true;
 $prefix: "mo-";
 $font-family-base: 'Cinzel';
 $font-size-base: 1rem;
-$link-color: white;
-$primary:       rgb(216, 184, 4);
-$secondary: #333;
 
 // Then import Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
