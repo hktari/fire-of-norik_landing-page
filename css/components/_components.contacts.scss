@@ -5,16 +5,18 @@
 .c-contacts__map {
     filter: sepia(50%);
     object-fit: cover;
+    width: 100%;
     box-shadow: 0px 5px 10px rgba($color: #000, $alpha: 0.3);
 }
 
 .c-contacts__list {
-    padding: 0;
+
     margin: 0;
+    padding: 0;
     list-style: none;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .c-contacts-list__item {
@@ -23,17 +25,16 @@
 
 .c-contacts-list__item--social {
     display: flex;
-    justify-items: start;
+    justify-items: center;
     align-items: center;
     flex-grow: 1;
     justify-self: flex-end;
     align-self: center;
     margin-bottom: 0;
+    height: auto;
 }
 
 .c-contacts-list__social {
-    width: 50px;
-    height: 50px;
     margin-left: 14px;
 
     &:first-of-type {
@@ -50,7 +51,7 @@
 .c-contacts-list__link {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
@@ -63,6 +64,18 @@
 
 .c-contacts-list__text {
     color: $dark;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-left: 24px;
+}
+
+@include media-breakpoint-up(lg) {
+    .c-contacts__map {
+        height: 500px;
+    }
+
+
+    .c-contacts-list__item--social {
+        align-self: flex-start;
+        justify-content: start;
+    }
 }
