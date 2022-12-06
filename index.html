@@ -25,13 +25,30 @@
                 <li class="o-list-inline__item c-nav-primary__item">
                     <a class="c-nav-primary__link" href="#contact">Kontakt</a>
                 </li>
-                <li class="o-list-inline__item c-nav-primary__item c-lang-selector">
-                    <select class="c-lang-selector__select">
-                        <option value="en">EN</option>
-                        <option value="sl">SL</option>
-                    </select>
-                    <img class="c-lang-selector__icon" src="/images/lang-ico.png" alt="" width="30px">
-                </li>
+                <div class="btn-group c-lang-selector">
+                    <button class="btn btn-outline p-2 text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="/images/slovenia-flag-icon-64.png" class="c-lang-selector__icon" alt="">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img class="me-1" src="/images/slovenia-flag-icon-64.png" height="16px" alt="">
+                                <span>
+                                    Slovenian
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img class="me-1" src="/images/united-states-of-america-flag-icon-64.png" height="16px" alt="">
+                                <span>
+                                    English
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </ul>
         </nav>
 
@@ -225,6 +242,7 @@
         <source src="/audio/blacksmith-ambient.mp3" type="audio/mpeg"/>
     </audio>
 
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
