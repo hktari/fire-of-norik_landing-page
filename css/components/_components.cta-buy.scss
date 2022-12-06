@@ -1,26 +1,36 @@
 .c-cta-buy {
-    height: 350px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .c-cta-buy__title {
     background-color: $color-grey-dark;
-    border-radius: $border-radius;
+    // border-radius: $border-radius;
     color: $color-brand-primary;
     text-shadow: $color-grey-dark 5px;
-    font-size: 3rem;
     font-weight: 700;
-    padding: 16px;
-    margin: 0 auto;
+    padding: 16px 24px;
+    align-self: stretch;
+    text-align: center;
     display: inline-block;
+    
+    @extend .mb-4, .h1;
 }
 
 .c-cta-buy__button {
-    @extend .btn;
-    @extend .btn-primary;
-    @extend .py-2, .px-4;
-    font-size: 1.5rem;
+    @extend .btn, .btn-primary, .py-2, .px-4, .fs-5;
+}
+
+@include media-breakpoint-up(lg) {
+    .c-cta-buy {
+        height: 350px;
+    }
+    .c-cta-buy__title{
+        margin: 0 auto;
+        align-self: center;
+        font-size: 3rem;
+    }
 }
