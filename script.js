@@ -9,14 +9,14 @@ window.addEventListener("load", (event) => {
 
     for (const audio of audioList) {
         audio.autoplay = true;
+        audio.play()
     }
 
     for (const video of videoList) {
         video.autoplay = true;
+        video.play()
     }
 
 
     page.classList.remove('c-page--no-scroll');
 });
-
-console.log('done')

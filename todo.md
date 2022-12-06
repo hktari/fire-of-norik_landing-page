@@ -5,9 +5,9 @@
 - contact section   OK
 - menu bar: gold bottom border, lang icons, title   OK
 - link to store: opaque bg                          OK
-- footer
+- footer    OK
+- loading indicator OK
 - setup sample domains
-- loading indicator
 - deploy
 - sign: add sepia effect, make brighter ?
 - mobile

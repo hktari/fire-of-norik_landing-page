@@ -5,6 +5,7 @@
   "main": "script.js",
   "scripts": {
     "sass-watch": "sass --watch css/main.scss:css/main.css --style expanded --precision 9",
+    "build": "chmod 766 ./build.sh && ./build.sh",
     "dev": "npm run sass-watch"
   },
   "keywords": [],
