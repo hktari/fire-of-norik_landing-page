@@ -10,12 +10,13 @@
   width: 100vw;
   height: 70px;
   z-index: 2;
-  padding: 0px 16px;
+
+  padding: 0px calc((100vw - 100vh * 16 / 9) / 2);
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background-color: #333;
+  background-color: $color-grey-dark;
   // &::before{
   //   content: '';
   //   position: absolute;

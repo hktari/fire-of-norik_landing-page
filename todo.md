@@ -1,15 +1,49 @@
+
+# VERSION 2
+- zamenjaj teksture, raje enobarvno odzadje (temno siva, črna)
+- sekcija: slideshow slik
+- language: nemščino
+- video ne igra na chrome
+- izpostavi: "ročno narejeni izdelki"
+- viseča tabla: preveč temno, potreben kontrast, kot odtisnjen
+- temno siva / črno, bela
+
+- mail
+
+## barve
+
+
+woocomerce : 66EU prvi trije mesci
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # TODO 
-- setup itcss   OK
-- about section OK
-- obisidian section OK
-- contact section   OK
-- menu bar: gold bottom border, lang icons, title   OK
-- link to store: opaque bg                          OK
-- footer    OK
-- loading indicator OK
-- setup sample domains OK
-- deploy    OK
-- mobile
 - smaller font sizes
 - smaller images
 - sign: add sepia effect, make brighter ?
