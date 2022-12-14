@@ -52,6 +52,10 @@
   background-color: $color-grey-dark;
   height: 100%;
   width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
 }
 
 @include media-breakpoint-up(lg) {
@@ -75,6 +79,10 @@
     min-height: 900px;
     min-width: 1600px;
     background-color: black;
+  }
+
+  .c-masthead__image-bg{
+    position: static;
   }
 
   .c-masthead__title {
