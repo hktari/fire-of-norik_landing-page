@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
 
+    background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -21,8 +22,6 @@
 }
 
 .c-cta-buy__title {
-    // background-color: $color-grey-dark;
-    // border-radius: $border-radius;
     color: $color-brand-primary ;
     text-shadow: $color-grey-dark 5px;
     padding: 16px 24px;
@@ -31,12 +30,14 @@
     display: inline-block;
     position: relative;
     z-index: 1;
-    
-    @extend .mb-4, .h1;
+
+    font-weight: 700;
+
+    @extend .mb-2, .mb-lg-4, .h1;
 }
 
 .c-cta-buy__button {
-    @extend .btn, .btn-secondary, .py-2, .px-4, .fs-5;
+    @extend .btn, .btn-secondary, .btn-lg;
     position: relative;
     z-index: 1;
     color: $color-white;
@@ -50,5 +51,6 @@
         margin: 0 auto;
         align-self: center;
         font-size: 3rem;
+        font-weight: 400;
     }
 }
