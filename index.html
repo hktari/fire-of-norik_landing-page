@@ -59,13 +59,23 @@
         <nav id="navbarNav" class="c-nav-mobile"></nav>
 
         <div class="c-masthead">
-            <div class="c-masthead__video">
-                <video id="bgVideo" preload="auto" loop height="150px" muted="false" src="/video/fire-vfx.m4v">    
-                </video>
-            </div>
-            <!-- <img src="/images/sparks-1.gif"> -->
+            <div class="c-masthead__bg-container">
 
-            <img class="c-masthead__image-bg" src="/images/blacksmith-workshop.jpg" alt="">
+                <div class="c-masthead__video">
+                    <video id="bgVideo" width="500px" height="125px" autoplay loop muted plays-inline>    
+                    <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
+                    <source type="video/mp4" src="/video/fire-vfx.mp4" />
+                    <!-- WebM/VP8 for Firefox4, Opera, and Chrome -->
+                    <source src="/video/fire-vfx.webm" type="video/webm">
+                    <!-- M4V for Apple -->
+                    <source type="video/mp4" src="/video/fire-vfx.m4v" />
+                </video>
+                </div>
+                <!-- <img src="/images/sparks-1.gif"> -->
+
+
+                <img class="c-masthead__image-bg" src="/images/blacksmith-workshop.jpg" alt="">
+            </div>
 
             <h1 class="c-masthead__title">
                 Fire Of Norik
@@ -86,7 +96,7 @@
     </header>
 
     <br/>
-    <br class="d-none d-lg-block"/>
+    <br class="d-none d-lg-block" />
     <br/>
 
     <section id="about" class="o-section">
@@ -95,19 +105,15 @@
                 <div class="col-12 col-md-6">
                     <h2 class="mb-3">O nam</h2>
                     <p class="lh-lg fw-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugit nobis iure ducimus! Aperiam atque a eaque, molestias quasi nam provident dicta harum hic soluta dignissimos numquam quis dolorem aut ex optio reiciendis veritatis
-                        quas minima deleniti in perferendis. Veritatis culpa velit quaerat ut neque, saepe, corrupti voluptate eos voluptatibus aspernatur harum illum accusamus animi! 
-                        
-                        <br class="d-lg-none"/>
-                        <br class="d-lg-none"/>
+                        quas minima deleniti in perferendis. Veritatis culpa velit quaerat ut neque, saepe, corrupti voluptate eos voluptatibus aspernatur harum illum accusamus animi!
+
+                        <br class="d-lg-none" />
+                        <br class="d-lg-none" />
 
                         <img class="d-lg-none img-fluid" src="/images/original/DSCN6606.JPG" alt="">
 
-                        <br class="d-lg-none"/>
-                        <br class="d-lg-none"/>
-
-
-                        Eveniet adipisci laborum delectus expedita rerum, esse soluta incidunt
-                        repellat quidem voluptates dolore sapiente quisquam rem alias dolorem excepturi eaque.
+                        <br class="d-lg-none" />
+                        <br class="d-lg-none" /> Eveniet adipisci laborum delectus expedita rerum, esse soluta incidunt repellat quidem voluptates dolore sapiente quisquam rem alias dolorem excepturi eaque.
                         <br/>
                         <br/> Nostrum eligendi tempore dolor voluptas adipisci, et ratione ut fugiat voluptatum, nobis pariatur? Itaque distinctio aliquam assumenda expedita animi sequi repudiandae nam placeat cupiditate est.</p>
                 </div>
@@ -145,8 +151,7 @@
                 porro ipsa voluptatum cum vero placeat voluptates iste deserunt. Magni, dolorum. Voluptates illo commodi nesciunt animi officiis!</p>
             <div class="row mb-lg-5 mt-2">
                 <div class="col-12 col-md-6">
-                    <div class="c-flip-card"
-                     style="background-image: url('/images/original/obisidian01.jpg');">
+                    <div class="c-flip-card" style="background-image: url('/images/original/obisidian01.jpg');">
                         <div class="c-flip-card__text-container p-4">
                             <h3 class="c-flip-card__title">
                                 Lorem ipsum dolor sit amet.
@@ -271,12 +276,12 @@
     </div>
     </div>
 
-    <audio preload="auto">
+    <!-- <audio preload="auto">
         <source src="/audio/enter-blacksmith-sfx.mp3" type="audio/mpeg"/>
     </audio>
     <audio loop="true" preload="auto">
         <source src="/audio/blacksmith-ambient.mp3" type="audio/mpeg"/>
-    </audio>
+    </audio> -->
     <!-- 
     <script src="simulate-loading.js"></script> -->
     <script src="script.js"></script>
