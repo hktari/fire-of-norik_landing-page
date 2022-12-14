@@ -2,7 +2,7 @@ $footer-height: 40px;
 
 .c-footer {
     height: $footer-height;
-    background-image: url('/images/blacksmith-wood-bg.png');
+    background-color: $color-grey-dark;
     display: flex;
     align-items: center;
     justify-content: center;
