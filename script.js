@@ -1,7 +1,35 @@
+const page = document.getElementById('pageRoot')
+
+function setPageScrollEnabled(enabled) {
+    if(enabled){
+        page.classList.remove('c-page--no-scroll');
+    }else{
+        page.classList.add('c-page--no-scroll');
+    }
+}
+
+/* ------------------------------- navigation ------------------------------- */
+
+const sideMenu = document.getElementById('sideMenu')
+const openSideMenuBtn = document.getElementById('openSideMenuBtn')
+const closeSideMenuBtn = document.getElementById('closeSideMenuBtn')
+
+openSideMenuBtn.addEventListener('click', () => {
+    sideMenu.classList.add('show')
+    setPageScrollEnabled(false)
+})
+
+closeSideMenuBtn.addEventListener('click', () => {
+    sideMenu.classList.remove('show')
+    setPageScrollEnabled(true)
+})
+
+
+/* --------------------------------- loading -------------------------------- */
+
 const videoList = document.getElementsByTagName('video')
 const audioList = document.getElementsByTagName('audio')
 const loadingInd = document.getElementById('loadingIndicator')
-const page = document.getElementById('pageRoot')
 
 window.addEventListener("load", (event) => {
     console.log('loaded !')
@@ -17,8 +45,7 @@ window.addEventListener("load", (event) => {
         video.play()
     }
 
-
-    page.classList.remove('c-page--no-scroll');
+    setPageScrollEnabled(true)
 });
 
 

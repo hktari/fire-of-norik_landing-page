@@ -51,12 +51,12 @@
 
             </ul>
 
-            <button class="c-nav-primary__menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="openSideMenuBtn" class="c-nav-primary__menu-toggle" type="button">
                 <i class="bi bi-list"></i>
               </button>
         </nav>
 
-        <nav id="navbarNav" class="c-nav-mobile"></nav>
+        <nav class="c-nav-mobile"></nav>
 
         <div class="c-masthead">
             <div class="c-masthead__bg-container">
@@ -94,8 +94,8 @@
     </header>
 
     <!-- ----------------------- mobile side navigation ------------------------ -->
-    <div class="c-side-nav">
-        <button class="c-side-nav__btn-close">
+    <nav id="sideMenu" class="c-side-nav">
+        <button id="closeSideMenuBtn" class="c-side-nav__btn-close">
             <i class="bi bi-x-lg"></i> 
         </button>
 
@@ -133,7 +133,7 @@
             </li>
         </ul>
 
-    </div>
+    </nav>
 
     <br/>
     <br class="d-none d-lg-block" />
