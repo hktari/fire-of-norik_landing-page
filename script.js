@@ -1,9 +1,9 @@
 const page = document.getElementById('pageRoot')
 
 function setPageScrollEnabled(enabled) {
-    if(enabled){
+    if (enabled) {
         page.classList.remove('c-page--no-scroll');
-    }else{
+    } else {
         page.classList.add('c-page--no-scroll');
     }
 }
@@ -14,15 +14,25 @@ const sideMenu = document.getElementById('sideMenu')
 const openSideMenuBtn = document.getElementById('openSideMenuBtn')
 const closeSideMenuBtn = document.getElementById('closeSideMenuBtn')
 
-openSideMenuBtn.addEventListener('click', () => {
-    sideMenu.classList.add('show')
-    setPageScrollEnabled(false)
-})
 
-closeSideMenuBtn.addEventListener('click', () => {
-    sideMenu.classList.remove('show')
-    setPageScrollEnabled(true)
-})
+function setShowSideMenu(show) {
+    if (show) {
+        sideMenu.classList.add('show')
+        setPageScrollEnabled(false)
+    } else {
+        sideMenu.classList.remove('show')
+        setPageScrollEnabled(true)
+    }
+
+}
+
+openSideMenuBtn.addEventListener('click', () => setShowSideMenu(true))
+closeSideMenuBtn.addEventListener('click', () => setShowSideMenu(false))
+
+const sideMenuLinks = sideMenu.querySelectorAll('a')
+for (const link of sideMenuLinks) {
+    link.addEventListener('click', () => setShowSideMenu(false))
+}
 
 
 /* --------------------------------- loading -------------------------------- */
